@@ -175,7 +175,7 @@
 				scrollTop: $('html').offset().top
 			}, 500, 'easeInOutExpo');
 			
-			return false;
+			return true;
 		});
 
 		$(window).scroll(function(){

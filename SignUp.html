@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Restitute Care</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+	<!------Datepicker  script---->
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/resources/demos/style.css">
 	
-    <!-- Animate.css -->
+	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap --> 
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-        
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css" rel="stylesheet">
-        
-     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css" rel="stylesheet">
+
+	<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Owl Carousel  -->
@@ -27,205 +35,208 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Flaticons  -->
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- css style  -->
-	<link rel="stylesheet" href="css/style.css">
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-    
-	    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    
-        <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
-
-<!--===============================================================================================
+	<!--===============================================================================================
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--==============================================================================================
+	==============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
+	<!--===============================================================================================
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================	
+===============================================================================================	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
+===============================================================================================-->
+	<!-- css style  -->
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
-<!--===============================================================================================-->
-    
+	<!--===============================================================================================-->
+	<script>
+		$(function () {
+			$("#datepicker").datepicker();
+		});
+	</script>
 </head>
-<body>
-	
-    
-     <a  class="js-colorlib-nav-toggle colorlib-nav-toggle colorlib-nav-white"><i></i></a>	
-	<nav class="colorlib-nav fixed-top" role="navigation" >
 
-			<div class="menu-wrap" >
-                <div class="col-md-1">
-             <div id="colorlib-logo"><a href="index.html"><i class="flaticon-stethoscope"></i>Restitute<span>Care</span></a></div>
-                </div>
+<body>
+
+	<div id="page">
+		<nav class="colorlib-nav fixed-top" role="navigation">
+			<div class="menu-wrap">
+				<div class="col-md-1">
+					<div id="colorlib-logo"><a href="index.html">
+							<i class="flaticon-stethoscope"></i>Restitute<span>Care</span></a>
+					</div>
+				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="menu-1" style="margin-left: 270px;">
-								<ul>
-                                    <li><a href="index.html">Home</a></li>
-									<li >
-										<a href="#">In house facility</a>
+
+							<ul>
+									<li><a href="Home.html">Home</a></li>
+									<li>
+										<a href="In_house_facility.html" style="padding-left: 3px;">In house facility</a>
 									</li>
-									<li><a href="#">Care at home</a></li>
-									<li >
-										<a href="#">Online Medicines</a>
+									<li><a href="Care%20at%20home.html" style="padding-left: 3px;">Care at home</a></li>
+									<li>
+										<a href="OnlineMedicines.html" style="padding-left: 3px;">Online Medicines</a>
 									</li>
-									<li >
-										<a href="#">Online Pathology</a>
+									<li>
+										<a href="OnlinePathology.html" style="padding-left: 3px;">Online Pathology</a>
 									</li>
-									<li><a href="#">OPD & SURGERY</a></li>
-                                    <li><a href="LogIn.html">LOGIN</a></li>
-                                    <li class="active"><a href="SignUp.html">SINGUP</a></li>
+									<li><a href="OPDandSurgery.html" style="padding-left: 3px;">OPD & SURGERY</a></li>
+									<li><a href="index.html" style="padding-left: 3px;">LOGIN</a></li>
+									<li class="active"><a href="SignUp.html" style="padding-left: 3px;">SIGNUP</a></li>
 								</ul>
-                                
+
 							</div>
-                                
+
 						</div>
 					</div>
 				</div>
 			</div>
-        </nav>
-    
-    
-	<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-			<div class="login100-form validate-form">
-				<span class="login100-form-title p-b-37">
-					Sign Up
-				</span>
+		</nav>
 
-                <!---Full Name--->
-				<div class="wrap-input100 validate-input m-b-20">
-					<input class="input100" type="text" name="name" placeholder="Full Name">
-					<span class="focus-input100"></span>
-				</div>
-                
-                <!---Email Id--->
-                <div class="wrap-input100 validate-input m-b-20">
-					<input class="input100" type="email" name="email" placeholder="Email Id">
-					<span class="focus-input100"></span>
-				</div>
-                
-                <!---Phone Number--->
-                <div class="wrap-input100 validate-input m-b-20">
-					<input class="input100" type="text" name="phone" placeholder="Phone Number">
-					<span class="focus-input100"></span>
-				</div>
-        
-                <!---Date of Birth--->
-                <div class="wrap-input100 validate-input m-b-20">
-                    <input  id="datepicker" class="input100" type="date">
-                    <span class="focus-input100"></span>
-               </div>
 
-                <!---Password--->
-				<div class="wrap-input100 validate-input m-b-25">
-					<input class="input100" type="password" name="pass" placeholder="Password">
-					<span class="focus-input100"></span>
-				</div>
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+				<div class="login100-form validate-form">
+					<span class="login100-form-title p-b-37">
+						Sign Up
+					</span>
 
-                <!---Confirm Password--->
-                <div class="wrap-input100 validate-input m-b-25">
-					<input class="input100" type="password" name="pass" placeholder="Confirm Password">
-					<span class="focus-input100"></span>
-				</div>
+					<!---Full Name--->
+					<div class="wrap-input100 validate-input m-b-20">
+						<input class="input100" type="text" name="name" id="name" placeholder="Full Name">
+						<span class="focus-input100"></span>
+					</div>
 
-                
-				<div class="container-login100-form-btn">
-					<button class="login100-form-btn">
-						SignUp
-					</button>
-				</div>
+					<!---Email Id--->
+					<div class="wrap-input100 validate-input m-b-20">
+						<input class="input100" type="email" name="email" id="email" placeholder="Email Id">
+						<span class="focus-input100"></span>
+					</div>
 
-				<div class="text-center" style="padding-top: 30px;">
-					<a href="#" class="txt2 hov1">
-						I'm alerady member
-					</a>
+					<!---Phone Number--->
+					<div class="wrap-input100 validate-input m-b-20">
+						<input class="input100" type="text" name="phone" id="phone" placeholder="Phone Number">
+						<span class="focus-input100"></span>
+					</div>
+
+					<!---Date of Birth--->
+					<div class="wrap-input100 validate-input m-b-20">
+						<input id="datepicker" class="input100" type="text" placeholder="Date of birth">
+						<span class="focus-input100"></span>
+					</div>
+
+					<!---Password--->
+					<div class="wrap-input100 validate-input m-b-25">
+						<input class="input100" type="password" name="pass" id="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<!---Confirm Password--->
+					<div class="wrap-input100 validate-input m-b-25">
+						<input class="input100" type="password" name="pass" id="Conf_pass" placeholder="Confirm Password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" id="btn">SignUp</button>
+					</div>
+
+					<div class="text-center" style="padding-top: 30px;">
+						<a href="#" class="txt2 hov1">
+							I'm alerady member
+						</a>
+					</div>
 				</div>
 			</div>
-
-			
 		</div>
-	</div>
-	
-        <div id="dropDownSelect1"></div>
-    <footer id="colorlib-footer" role="contentinfo">
-        <div class="overlay"></div>
-        <div class="container">
-			<div class="row row-pb-md">
-                	<div class="col-md-8 col-md-push-3 colorlib-widget">
-                        <h3 style="font-size: 35px;">Contact Us</h3>
-                        <div class="contact-form">
-                            	<div class="form-group">
-							<label for="name" class="sr-only">Name</label>
-							<input type="name" class="form-control" id="name" placeholder="Name" style="color: #fff;">
-						</div>
-                        <div class="form-group">
-							<label for="email" class="sr-only">Email</label>
-							<input type="email" class="form-control" id="email" placeholder="Email" style="color: #fff;">
-						</div>
-                            <div class="form-group">
-							<label for="message" class="sr-only">Message</label>
-							<textarea class="form-control" id="message" rows="3" placeholder="Message" style="color: #fff;"></textarea>
-						</div>
-                        <div class="form-group">
-							<input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md" value="Send Message">
-						</div>
-                        </div>
-                   </div>
-         </div>
-            <div class="row text-center" style="padding-bottom: 10px;">
-            <div class="col-md-12">
-        		<div class="social-links col-md-12 offset-md-4 mt-10">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" ><i class="fa fa-youtube"></i></a>
-            </div>
-        	</div>
-        </div>
-    </div>
 
-         <div class="row copyright" style="width: 100%;">
-			<div class="col-md-12 text-center">
-				<p>
-					<small class="block">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made By TUDs
-</small> 
-               </p>
+		<div id="dropDownSelect1"></div>
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-8 col-md-push-3 colorlib-widget">
+						<h3 style="font-size: 35px;">Contact Us</h3>
+						<div class="contact-form">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name</label>
+								<input type="name" class="form-control" id="name" placeholder="Name" style="color: #fff;">
+							</div>
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Email" style="color: #fff;">
+							</div>
+							<div class="form-group">
+								<label for="message" class="sr-only">Message</label>
+								<textarea class="form-control" id="message" rows="3" placeholder="Message"
+									style="color: #fff;"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md"
+									value="Send Message">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center" style="padding-bottom: 10px;">
+					<div class="col-md-12">
+						<div class="social-links col-md-12 offset-md-4 mt-10">
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>	
-</footer>
 
-	
-    <div class="gototop js-top active">
+			<div class="row copyright" style="width: 100%;">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> All rights reserved | Made By TUDs
+						</small>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 
-    <!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
+
+	<!--==============================================================================================
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!-- ===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
@@ -241,25 +252,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Sticky Kit -->
 	<script src="js/sticky-kit.min.js"></script>
+
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-
-
+	<!-- firebase js -->
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+	<script src="js/firebaseInit.js"></script>
+	<script src="js/sign_up.js"></script>
 </body>
+
 </html>
