@@ -43,6 +43,29 @@
 
 <body>
 
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/6.5.0/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyAceXLhjic6gHn5N1BoZpNSACmwbosNlhE",
+			authDomain: "pharmacy-web.firebaseapp.com",
+			databaseURL: "https://pharmacy-web.firebaseio.com",
+			projectId: "pharmacy-web",
+			storageBucket: "",
+			messagingSenderId: "223049533791",
+			appId: "1:223049533791:web:5fe518af8cb9ed9b"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
 
 
 	<div id="page" style="overflow: hidden;">
@@ -69,8 +92,9 @@
 										<a href="OnlinePathology.html" style="padding-left: 3px;">Online Pathology</a>
 									</li>
 									<li><a href="OPDandSurgery.html" style="padding-left: 3px;">OPD & SURGERY</a></li>
-									<li><a href="LogIn.html" style="padding-left: 3px;">LOGIN</a></li>
+									<li><a href="index.html" style="padding-left: 3px;">LOGIN</a></li>
 									<li><a href="SignUp.html" style="padding-left: 3px;">SIGNUP</a></li>
+									<li><a href="service_form.html" style="padding-left: 3px;">Form</a></li>
 								</ul>
 							</div>
 						</div>
@@ -78,9 +102,7 @@
 				</div>
 			</div>
 		</nav>
-
-
-
+		
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
@@ -206,29 +228,57 @@
 							We believe in "the timely use of personal health services to achieve the best health outcomes."
 
 						</p>
-						<!--	<div class="fancy-collapse-panel">
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                     <div class="panel panel-default">
-                         <div class="panel-heading" role="tab" id="headingOne">
-                             <h4 class="panel-title">
-                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why choose us?
-                                 </a>
-                             </h4>
-                         </div>
-                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                             <div class="panel-body">
-								    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="panel panel-default">
-                         <div class="panel-heading" role="tab" id="headingTwo">
-                             <h4 class="panel-title">
-                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What we do?
-                                 </a>
-                             </h4>
-                         </div>
-                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="fancy-collapse-panel">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">Why choose us?
+											</a>
+										</h4>
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<p><strong>MISSION</strong><br>
+												To provide patient-centered healthcare with excellence in quality, service, and access through
+												our channel partners at an affordable cost. To inspire hope, and contribute to health and
+												well-being by providing the best care to every patient through integrated clinical practice,
+												education and research.<br>
+												<strong> + VALUES</strong><br>
+												1. People We respect each person as a member of the hospital community. Involvement and teamwork
+												determine our future.<br>
+												2. Service Excellence We are committed to our standards of service excellence and dedicated to
+												exceeding the expectations of those we serve.<br>
+												3. Responsibility-Quality We consistently strive to provide the highest quality, safe patient
+												care.<br>
+												4. Communication We promote open communication that fosters partnership and enhances timely,
+												effective and appropriate responses.<br>
+												5. Innovation we are committed to a supportive environment that encourages new ideas and
+												creativity.<br>
+												<strong> + ADDITIONAL CORE VALUES</strong><br>
+												• Integrity <br>
+												• Stewardship <br>
+												• Professionalism <br>
+												• Compassion<br>
+
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--<div class="panel panel-default">
+                         <div class="col-md-4 animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="flaticon-blood-donation"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">Dedicated Team</a></h3>
+							<p>Our clinicians are part of a larger team of dedicated home health care professionals who all play an important role in delivering the best care experience possible. Your clinical manager oversees and manages your care plan and caregivers to ensure your care needs are met, and also communicates with your doctor as needed. Your client services manager helps coordinate your care schedule and serves as a primary contact for any questions you may have. </p>
+						</div>
+					</div>
+				</div>-->
+								<!-- <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                              <div class="panel-body">
                                  <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 											<ul>
@@ -250,9 +300,9 @@
                                  <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
                              </div>
                          </div>
-                     </div>
-                  </div>
-               </div>-->
+                     </div>-->
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -355,9 +405,28 @@
 								<i class="flaticon-healthy-1"></i>
 							</span>
 							<div class="desc">
-								<h3><a href="#">Qualified Doctors</a></h3>
-								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
-									Marks and devious Semikoli</p>
+								<h3><a href="#">Mother and Child care</a></h3>
+								<p>A Mother and Newborn required special attention and we treat every child and their family as an
+									extension of our own. With your child’s medical needs and safety as our highest priority and
+									support—just like a real family would do in times of need. we are humbled by the confidence and trust
+									our families place in Delhi NCR.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-ambulance"></i>
+							</span>
+							<div class="desc">
+								<h3><a href="#">Offer</a></h3>
+								<p>
+									1- Nurses, for medical needs and individual clinical manager.<br>
+									2- Physical therapists (PTs), to help restore mobility.<br>
+									3- Occupational therapists (OTs), to improve the ability to perform everyday activities.<br>
+									4- Speech language pathologists (SLPs), to help with speech.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -367,47 +436,47 @@
 								<i class="flaticon-hospital"></i>
 							</span>
 							<div class="desc">
-								<h3><a href="#">Medical Counseling</a></h3>
-								<p>Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and
-									made herself on the way.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="flaticon-ambulance"></i>
-							</span>
-							<div class="desc">
-								<h3><a href="#">Emergency Services</a></h3>
-								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
-									Marks and devious Semikoli</p>
+								<h3><a href="#">Medicare</a></h3>
+								<p>Our bonding with patients and clinical excellence go hand in hand. That’s what makes our one-on-one
+									home Medicare services so special for Patients and so rewarding for clinicians. Providing you with
+									nurses, therapists, and aides who have the skills and expertise to meet your needs is just the
+									beginning.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 animate-box">
-						<div class="services">
-							<span class="icon">
-								<i class="flaticon-blood-donation"></i>
-							</span>
-							<div class="desc">
-								<h3><a href="#">Blood Bank</a></h3>
-								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
-									Marks and devious Semikoli</p>
-							</div>
-						</div>
-					</div>
+
 					<div class="col-md-4 animate-box">
 						<div class="services">
 							<span class="icon">
 								<i class="flaticon-radiation"></i>
 							</span>
 							<div class="desc">
-								<h3><a href="#">Operation Theater</a></h3>
-								<p>Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and
-									made herself on the way.</p>
+								<h3><a href="#">Nutritional Requirement</a></h3>
+								<p>Our team of dietician and nutritionist continually reviews new research and information from around
+									the world on human nutrient requirements and recommended nutrient intakes.We provide a comprehensive
+									health management plan ‘Restitute Activ’ that is designed to better assist you in leading a healthy
+									life we design a personal diet for you. <br>
+									• A Complete Health Assessment.<br>
+									• Nutritional Requirement.<br>
+									• Continuous monitoring and Support.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-blood-donation"></i>
+							</span>
+							<div class="desc">
+								<h3><a href="#">Dedicated Team</a></h3>
+								<p>Our clinicians are part of a larger team of dedicated home health care professionals who all play an
+									important role in delivering the best care experience possible. Your clinical manager oversees and
+									manages your care plan and caregivers to ensure your care needs are met, and also communicates with
+									your doctor as needed. Your client services manager helps coordinate your care schedule and serves as
+									a primary contact for any questions you may have. </p>
 							</div>
 						</div>
 					</div>
@@ -417,9 +486,12 @@
 								<i class="flaticon-medical"></i>
 							</span>
 							<div class="desc">
-								<h3><a href="#">Free Medicine</a></h3>
-								<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question
-									Marks and devious Semikoli</p>
+								<h3><a href="#">Medical Equipment for home</a></h3>
+								<p>To manage the day to day medical need and equipment either for diagnosis or to manage the health
+									condition, we may require medical equipment for short term or long term purpose during the difficult
+									phase of life. And Getting medical equipment on rent or purchase at your doorstep has never been this
+									convenient. Restitute cares offers a wide range of medical equipment for rent or purchase making
+									healthcare more accessible and affordable for you.</p>
 							</div>
 						</div>
 					</div>
@@ -531,14 +603,50 @@
 								<label for="name" class="sr-only">Name</label>
 								<input type="name" class="form-control" id="name" placeholder="Name" style="color: #fff;">
 							</div>
+							<div class="name-error" style="display: none">
+								<span class="TQGan" style="color: red">
+									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
+										height="16px" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+										</path>
+										<path d="M0 0h24v24H0z" fill="none"></path>
+									</svg>
+								</span>
+								<label style="color: red; font-size: 14px;" id="name-error" class="ml-2"></label>
+							</div>
 							<div class="form-group">
 								<label for="email" class="sr-only">Email</label>
 								<input type="email" class="form-control" id="email" placeholder="Email" style="color: #fff;">
+							</div>
+							<div class="email-error" style="display: none">
+								<span class="TQGan" style="color: red">
+									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
+										height="16px" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+										</path>
+										<path d="M0 0h24v24H0z" fill="none"></path>
+									</svg>
+								</span>
+								<label style="color: red; font-size: 14px;" id="emailerror" class="ml-2"></label>
 							</div>
 							<div class="form-group">
 								<label for="message" class="sr-only">Message</label>
 								<textarea class="form-control" id="message" rows="3" placeholder="Message"
 									style="color: #fff;"></textarea>
+							</div>
+							<div class="message-error" style="display: none">
+								<span class="TQGan" style="color: red">
+									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
+										height="16px" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+										</path>
+										<path d="M0 0h24v24H0z" fill="none"></path>
+									</svg>
+								</span>
+								<label style="color: red; font-size: 14px;" id="message-error" class="ml-2"></label>
 							</div>
 							<div class="form-group">
 								<input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md"
@@ -598,6 +706,8 @@
 	<script src="js/sticky-kit.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!---contact validation-->
+	<script src="js/contact_validation.js"></script>
 
 </body>
 

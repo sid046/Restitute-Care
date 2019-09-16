@@ -406,14 +406,53 @@
 								<label for="name" class="sr-only">Name</label>
 								<input type="name" class="form-control" id="name" placeholder="Name" style="color: #fff;">
 							</div>
+							<!---Name error--->
+							<div class="name-error" style="display: none">
+								<span class="TQGan" style="color: red">
+									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
+										height="16px" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+										</path>
+										<path d="M0 0h24v24H0z" fill="none"></path>
+									</svg>
+								</span>
+								<label style="color: red; font-size: 14px;" id="name-error" class="ml-2"></label>
+							</div>
 							<div class="form-group">
 								<label for="email" class="sr-only">Email</label>
 								<input type="email" class="form-control" id="email" placeholder="Email" style="color: #fff;">
+							</div>
+							<!----Email---->
+							<div class="email-error" style="display: none">
+								<span class="TQGan" style="color: red">
+									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
+										height="16px" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+										</path>
+										<path d="M0 0h24v24H0z" fill="none"></path>
+									</svg>
+								</span>
+								<label style="color: red; font-size: 14px;" id="emailerror" class="ml-2"></label>
 							</div>
 							<div class="form-group">
 								<label for="message" class="sr-only">Message</label>
 								<textarea class="form-control" id="message" rows="3" placeholder="Message"
 									style="color: #fff;"></textarea>
+							</div>
+							<!---Message error---->
+							<div class="message-error" style="display: none">
+								<span class="TQGan" style="color: red">
+									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
+										height="16px" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+										</path>
+										<path d="M0 0h24v24H0z" fill="none"></path>
+									</svg>
+								</span>
+								<label style="color: red; font-size: 14px;" id="message-error" class="ml-2"></label>
 							</div>
 							<div class="form-group">
 								<input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md"
@@ -476,6 +515,7 @@
 	<script src="js/sticky-kit.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script src="js/contact_validation.js"></script>
 
 
 
