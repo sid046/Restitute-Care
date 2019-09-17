@@ -18,8 +18,11 @@ $("#signbtn").click(function () {
   if (dob != ""|| dob == Cpass) {
     $(".dob-error").hide();
   }
-  if (pass != "") {
+  if (pass != "" ) {
     $(".password-error").hide();
+  }
+  if(pass == Cpass){
+    $(".conPass-error").hide();
   }
 
 
@@ -58,7 +61,9 @@ $("#signbtn").click(function () {
   else{
     $("#signbtn").attr("disabled", true);
     $(".spinner-border").show();
+    
     CreateUser(email,Cpass,name,dob,phone);
+    $('#my-error').hide();
   }
   
 });
@@ -68,7 +73,6 @@ function CreateUser(email, Conf_Password, Name, DOB, Phone) {
   firebase.auth().createUserWithEmailAndPassword(email, Conf_Password).then(function () {
     var user = firebase.auth().currentUser;
     var userID = user.uid;
-    alert(userID);
     var URef = firebase.database().ref().child("User_Details").child(userID);
     URef.set({
       Name: Name,
@@ -84,5 +88,7 @@ function CreateUser(email, Conf_Password, Name, DOB, Phone) {
     var errorMessage = error.message;
     // alert(errorMessage);
     $('#my-error').addClass("alert alert-danger").text(errorMessage).show();
+    $("#signbtn").attr("disabled", false);
+    $(".spinner-border").hide();
   });
 }
