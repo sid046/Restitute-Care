@@ -10,7 +10,8 @@
   <meta name="keywords" content="" />
   <meta name="author" content="" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Animate.css -->
   <link rel="stylesheet" href="css/animate.css">
   <!-- Icomoon Icon Fonts-->
@@ -36,10 +37,10 @@
   <!-- css style  -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!--Modernizr JS-->
+  <!-- Modernizr JS -->
   <script src="js/modernizr-2.6.2.min.js"></script>
 
-  <!-- Main Style-->
+  <!-- Main Style -->
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Responsive Style -->
   <link rel="stylesheet" href="assets/css/responsive.css">
@@ -65,10 +66,12 @@
               <div class="menu-1" style="margin-left: 270px;">
                 <ul>
                   <li><a href="Home.html">Home</a></li>
-                  <li class="active">
-                    <a href="In_house_facility.html" style="padding-left: 3px;">In house facility</a>
+                  <li>
+                    <a href="Care Homes.html" style="padding-left: 3px;">Care Homes</a>
                   </li>
-                  <li><a href="Care%20at%20home.html" style="padding-left: 3px;">Care at home</a></li>
+                  <li class="active">
+                    <a href="In house facility.html" style="padding-left: 3px;">In house facility</a>
+                  </li>
                   <li>
                     <a href="OnlineMedicines.html" style="padding-left: 3px;">Online Medicines</a>
                   </li>
@@ -85,112 +88,234 @@
         </div>
       </div>
     </nav>
-    <div id="colorlib-hero" class="hero">
+
+    <aside id="colorlib-hero" class="hero">
       <div class="flexslider">
-        <div class="slides">
-          <li style="background-image: url(images/img_bg_5.jpg);">
+        <ul class="slides">
+          <li style="background-image: url(images/img_bg_2.jpg);">
             <div class="overlay"></div>
             <div class="container">
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center slider-text">
                   <div class="slider-text-inner">
-                    <h1>Our In house<strong> facility</strong></h1>
+                    <h1>Our In House<strong> Facility</strong></h1>
                     <!--<h2>html5 Bootstrap Templates Made by <a href="#" target="_blank"></a></h2>-->
                   </div>
                 </div>
               </div>
             </div>
           </li>
-        </div>
+        </ul>
       </div>
-    </div>
+    </aside>
 
-    <div id="colorlib-register" style="background-image: url(images/img_bg_1.jpg);" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
+    <!-- Services Section Start -->
+    <section id="services" class="section-padding">
       <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Home Service</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
         <div class="row">
           <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
+          <div class="col-md-4 col-lg-6 col-xs-12">
             <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon">
+              <div class="icon" style="text-align: center;">
                 <!--<img src="images/procedures-solid.svg">-->
                 <i class="fas fa-heartbeat"></i>
               </div>
               <div class="services-content">
-                <h3><a style="font-weight: 600; color: #fff; font-size: 20px;">Nursing Home</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida.
-                </p>
+                <h3 style="text-align: center;"><a style="font-weight: 700;">Assistant Care at home</a></h3>
+                <p style="font-size: 14px;">A time will come in everyone life When you realize that either you or your
+                  loved one is no longer able to take care of themselves and that they either need help to remain at
+                  home or have to move to a nursing home or specialized facility for seniors, you may feel overwhelmed,
+                  helpless even. At Restitute cares we are committed to improving the well-being of our clients. </p>
               </div>
             </div>
           </div>
           <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
+          <div class="col-md-4 col-lg-6 col-xs-12">
             <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
-              <div class="icon">
+              <div class="icon" style="text-align: center;">
                 <i class="fas fa-first-aid"></i>
               </div>
               <div class="services-content">
-                <h3><a style="font-weight: 600; color: #fff; font-size: 20px;">Urgent Care Clinic</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida.
+                <h3 style="text-align: center;"><a href="#" style="font-weight: 700; ">Your Trusted Partner</a></h3>
+                <p style="font-size: 14px;">
+                  <strong>1-</strong> Developing a fully personalized plan and schedule of care.<br>
+                  <strong>2-</strong> Providing care that is not just professional but compassionate.<br>
+                  <strong>3-</strong> Creating fall prevention strategies.<br>
+                  <strong>4-</strong> Providing incidental transportation around the area.<br>
+                  <strong>5-</strong> Running errands and home/grocery shopping.<br>
+                  <strong>6-</strong> Assisting with walking, transferring, and positioning.
                 </p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
+          <!-- Services item 
+          <div class="col-md-6 col-lg-6 col-xs-12">
             <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
               <div class="icon">
                 <i class="fas fa-procedures"></i>
               </div>
               <div class="services-content">
-                <h3><a style="font-weight: 600; color: #fff; font-size: 20px;">Monitoring of medication</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida.
-                </p>
+                <h3><a href="#" style="font-weight: 600;">Physiotherapy at home</a></h3>
+                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
+          <!-- Services item
+          <div class="col-md-6 col-lg-6 col-xs-12">
             <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
               <div class="icon">
                 <i class="fas fa-laptop-medical"></i>
               </div>
               <div class="services-content">
-                <h3><a style="font-weight: 600; color: #fff; font-size: 20px;">24-hour emergency care</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida.
-                </p>
+                <h3><a href="#" style="font-weight: 600;">Health Attendants at home</a></h3>
+                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
+          <!-- Services item 
+          <div class="col-md-6 col-lg-6 col-xs-12">
             <div class="services-item wow fadeInRight" data-wow-delay="1.5s">
               <div class="icon">
                 <i class="fas fa-file-medical-alt"></i>
               </div>
               <div class="services-content">
-                <h3><a style="font-weight: 600; color: #fff; font-size: 20px;">Assistant </a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida.
-                </p>
+                <h3><a href="#" style="font-weight: 600;">Diagnostic Care</a></h3>
+                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
+          <!-- Services item 
+          <div class="col-md-6 col-lg-6 col-xs-12">
             <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
               <div class="icon">
-                <i class="fas fa-ambulance"></i>
+               <i class="fas fa-ambulance"></i>
               </div>
               <div class="services-content">
-                <h3><a style="font-weight: 600; color: #fff; font-size: 20px;">24x7 Service</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida.
-                </p>
+                <h3><a href="#" style="font-weight: 600;">24x7 Service</a></h3>
+                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- About Section start -->
+    <div class="about-area section-padding bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12 info">
+            <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+              <div>
+                <div class="site-heading">
+                  <!-- <p class="mb-3">Manage Statistics</p>-->
+                  <h2 class="section-title"></h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Praesent imperdiet, tellus et euismod euismod, risus lorem euismod erat, at finibus neque odio quis
+                    metus. Donec vulputate arcu quam. Morbi quis tincidunt ligula. Sed rutrum tincidunt pretium. Mauris
+                    auctor, purus a pulvinar fermentum, odio dui vehicula lorem, nec pharetra justo risus quis mi. Ut ac
+                    ex sagittis, viverra nisl vel, rhoncus odio.
+                  </p>
+                  <!--<a href="#" class="btn btn-common mt-3">Read More</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+            <img class="img-fluid" src="assets/img/about/img-1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Certified Palliative Care</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s" style="color: #3c97e8;"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="content-left">
+              <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
+                <span class="icon">
+                  <i class="fas fa-file-medical"></i>
+                </span>
+                <div class="text">
+                  <h4>X-Ray at home</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
+                <span class="icon">
+                  <i class="fas fa-capsules"></i>
+                </span>
+                <div class="text">
+                  <h4>Medicine Delivery at home</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
+                <span class="icon">
+                  <i class="fas fa-clinic-medical"></i>
+                </span>
+                <div class="text">
+                  <h4>Multiple Services at home</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
+              <img src="images/blue-pills-vector.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="content-right">
+              <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+                <span class="icon">
+                  <i class="fas fa-briefcase-medical"></i>
+                </span>
+                <div class="text">
+                  <h4>Doctor at home</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
+                <span class="icon">
+                  <i class="fas fa-crutch"></i>
+                </span>
+                <div class="text">
+                  <h4>Medical Equipment at home</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+              <div class="box-item wow fadeInRight" data-wow-delay="0.9s">
+                <span class="icon">
+                  <i class="fas fa-diagnoses"></i>
+                </span>
+                <div class="text">
+                  <h4>Nursing Procedure at home</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Features Section End -->
+
 
     <footer id="colorlib-footer" role="contentinfo">
       <div class="overlay"></div>
@@ -205,7 +330,7 @@
                 <input type="name" class="form-control" id="name" placeholder="Name" style="color: #fff;">
               </div>
               <!---Name error--->
-              <div class="name-error" style="display: none">
+              <div class="names-error" style="display: none">
                 <span class="TQGan" style="color: red">
                   <svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
                     height="16px" viewBox="0 0 24 24" fill="currentColor">
@@ -253,8 +378,11 @@
                 <label style="color: red; font-size: 14px;" id="message-error" class="ml-2"></label>
               </div>
               <div class="form-group">
-                <input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md"
-                  value="Send Message">
+                <button class=" btn btn-primary btn-send-message btn-md" id="btn-submit">
+                  <span class="spinner-border spinner-border-sm" style="display: none; width: 20px; height: 20px;"
+                    role="status" aria-hidden="true"></span>
+                  <span class="ml-2">Send message</span>
+                </button>
               </div>
             </div>
           </div>
@@ -312,7 +440,11 @@
   <script src="js/sticky-kit.min.js"></script>
   <!-- Main -->
   <script src="js/main.js"></script>
-  <script src="js/contact_validation.js"></script>
+  <script src="js/Custom_Js/ContactForm.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+	<script src="js/Custom_js/FirebaseInit.js"></script>
 
 </body>
 

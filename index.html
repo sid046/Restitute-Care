@@ -6,6 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
 	<!-- Animate.css -->
@@ -66,7 +68,7 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="menu-1" style="margin-left: 270px;">
-								<ul>
+							<!-- 	<ul>
 									<li><a href="Home.html">Home</a></li>
 									<li>
 										<a href="In_house_facility.html" style="padding-left: 3px;">In house facility</a>
@@ -81,7 +83,7 @@
 									<li><a href="OPDandSurgery.html" style="padding-left: 3px;">OPD & SURGERY</a></li>
 									<li class="active" style="padding-left: 3px;"><a href="index.html">LOGIN</a></li>
 									<li><a href="SignUp.html" style="padding-left: 3px;">SIGNUP</a></li>
-								</ul>
+								</ul> -->
 
 							</div>
 
@@ -99,7 +101,7 @@
 						LogIn
 					</span>
 
-					<div class="wrap-input100 validate-input m-b-20">
+					<div class="wrap-input100 validate-input">
 						<input class="input100 full-name" type="email" id="email" name="email" placeholder="Email Id">
 						<span class="focus-input100"></span>
 					</div>
@@ -116,7 +118,7 @@
 						<label style="color: red; font-size: 14px;" id="email-error" class="ml-2"></label>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-25">
+					<div class="wrap-input100 validate-input m-t-25">
 						<input class="input100 pass" type="password" id="password" name="pass" placeholder="Password">
 						<span class="focus-input100"></span>
 					</div>
@@ -133,9 +135,11 @@
 						<label style="color: red; font-size: 14px;" id="pass-error" class="ml-2"></label>
 					</div>
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="btn">
-							LogIn
+
+					<div class="container-login100-form-btn m-t-25">
+						<button class="login100-form-btn" id="LogIn">
+							<span class="spinner-border spinner-border-sm"  style="display: none; width: 20px; height: 20px;" role="status" aria-hidden="true"></span>
+							<span class="ml-2">LogIn</span>
 						</button>
 					</div>
 
@@ -144,6 +148,8 @@
 							Create free account
 						</a>
 					</div>
+
+					<label style="color: red; font-size: 14px; display: none;" id="my-error" class="ml-2"></label>
 				</div>
 
 
@@ -153,7 +159,7 @@
 		<div id="dropDownSelect1"></div>
 		<footer id="colorlib-footer" role="contentinfo">
 			<div class="overlay"></div>
-			<div class="container">
+			<!-- <div class="container">
 				<div class="row row-pb-md">
 					<div class="col-md-8 col-md-push-3 colorlib-widget">
 						<h3 style="font-size: 35px;">Contact Us</h3>
@@ -162,7 +168,7 @@
 								<label for="name" class="sr-only">Name</label>
 								<input type="name" class="form-control" id="name" placeholder="Name" style="color: #fff;">
 							</div>
-							<!---Name error--->
+							
 							<div class="name-error" style="display: none">
 								<span class="TQGan" style="color: red">
 									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
@@ -179,7 +185,7 @@
 								<label for="email" class="sr-only">Email</label>
 								<input type="email" class="form-control" id="email" placeholder="Email" style="color: #fff;">
 							</div>
-							<!----Email---->
+							
 							<div class="email-error" style="display: none">
 								<span class="TQGan" style="color: red">
 									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
@@ -197,7 +203,7 @@
 								<textarea class="form-control" id="message" rows="3" placeholder="Message"
 									style="color: #fff;"></textarea>
 							</div>
-							<!---Message error---->
+					
 							<div class="message-error" style="display: none">
 								<span class="TQGan" style="color: red">
 									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
@@ -227,7 +233,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="row copyright" style="width: 100%;">
 				<div class="col-md-12 text-center">

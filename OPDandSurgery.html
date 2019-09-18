@@ -11,7 +11,8 @@
 	<meta name="author" content="" />
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -54,31 +55,6 @@
 
 <body>
 
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="/__/firebase/6.5.0/firebase-app.js"></script>
-
-	<!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#reserved-urls -->
-
-	<!-- Initialize Firebase -->
-	<script src="/__/firebase/init.js"></script>
-
-	<script>
-		// Your web app's Firebase configuration
-		var firebaseConfig = {
-			apiKey: "AIzaSyAceXLhjic6gHn5N1BoZpNSACmwbosNlhE",
-			authDomain: "pharmacy-web.firebaseapp.com",
-			databaseURL: "https://pharmacy-web.firebaseio.com",
-			projectId: "pharmacy-web",
-			storageBucket: "",
-			messagingSenderId: "223049533791",
-			appId: "1:223049533791:web:5fe518af8cb9ed9b"
-		};
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-	</script>
-
-
 	<div id="page" style="overflow: hidden;">
 		<nav class="colorlib-nav fixed-top" role="navigation">
 			<div class="menu-wrap" style="margin-right: 10px;">
@@ -93,9 +69,9 @@
 								<ul>
 									<li><a href="Home.html">Home</a></li>
 									<li>
-										<a href="In_house_facility.html" style="padding-left: 3px;">In house facility</a>
+										<a href="Care Homes.html" style="padding-left: 3px;">Care Homes</a>
 									</li>
-									<li><a href="Care%20at%20home.html" style="padding-left: 3px;">Care at home</a></li>
+									<li><a href="In house facility.html" style="padding-left: 3px;">In house facility</a></li>
 									<li>
 										<a href="OnlineMedicines.html" style="padding-left: 3px;">Online Medicines</a>
 									</li>
@@ -407,7 +383,7 @@
 								<input type="name" class="form-control" id="name" placeholder="Name" style="color: #fff;">
 							</div>
 							<!---Name error--->
-							<div class="name-error" style="display: none">
+							<div class="names-error" style="display: none">
 								<span class="TQGan" style="color: red">
 									<svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16px"
 										height="16px" viewBox="0 0 24 24" fill="currentColor">
@@ -455,8 +431,11 @@
 								<label style="color: red; font-size: 14px;" id="message-error" class="ml-2"></label>
 							</div>
 							<div class="form-group">
-								<input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md"
-									value="Send Message">
+								<button class=" btn btn-primary btn-send-message btn-md" id="btn-submit">
+									<span class="spinner-border spinner-border-sm" style="display: none; width: 20px; height: 20px;"
+										role="status" aria-hidden="true"></span>
+									<span class="ml-2">Send message</span>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -515,7 +494,11 @@
 	<script src="js/sticky-kit.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<script src="js/contact_validation.js"></script>
+	<script src="js/Custom_Js/ContactForm.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+	<script src="js/Custom_js/FirebaseInit.js"></script>
 
 
 

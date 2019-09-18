@@ -12,12 +12,12 @@ $("#btn-submit").click(function(){
        $(".email-error").hide();
        }
     if(name == ""){
-        $(".name-error").show();
+        $(".names-error").show();
         $("#name-error").text("Please enter name");
     }
     
     if(name != ""){
-       $(".name-error").hide();
+       $(".names-error").hide();
        }
     if(message == ""){
         $(".message-error").show();

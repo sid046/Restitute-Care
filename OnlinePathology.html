@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="fonts/fontawesome-free-5.10.2/fontawesome-free-5.10.2-web/css/all.css" rel="stylesheet">
 
@@ -92,10 +93,10 @@
                                 <ul>
                                     <li><a href="Home.html">Home</a></li>
                                     <li>
-                                        <a href="In_house_facility.html" style="padding-left: 3px;">In house
-                                            facility</a>
+                                        <a href="Care Homes.html" style="padding-left: 3px;">Care Homes</a>
                                     </li>
-                                    <li><a href="Care%20at%20home.html" style="padding-left: 3px;">Care at home</a></li>
+                                    <li><a href="In house facility.html" style="padding-left: 3px;">In house
+                                            facility</a></li>
                                     <li>
                                         <a href="OnlineMedicines.html" style="padding-left: 3px;">Online Medicines</a>
                                     </li>
@@ -384,7 +385,7 @@
                                     style="color: #fff;">
                             </div>
                             <!---Name error--->
-                            <div class="name-error" style="display: none">
+                            <div class="names-error" style="display: none">
                                 <span class="TQGan" style="color: red">
                                     <svg xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                                         width="16px" height="16px" viewBox="0 0 24 24" fill="currentColor">
@@ -433,8 +434,12 @@
                                 <label style="color: red; font-size: 14px;" id="message-error" class="ml-2"></label>
                             </div>
                             <div class="form-group">
-                                <input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md"
-                                    value="Send Message">
+                                <button class=" btn btn-primary btn-send-message btn-md" id="btn-submit">
+                                    <span class="spinner-border spinner-border-sm"
+                                        style="display: none; width: 20px; height: 20px;" role="status"
+                                        aria-hidden="true"></span>
+                                    <span class="ml-2">Send message</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -494,8 +499,11 @@
     <script src="js/Online_Pathology.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
-    <script src="js/contact_validation.js"></script>
-
+    <script src="js/Custom_Js/ContactForm.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+	<script src="js/Custom_js/FirebaseInit.js"></script>
 </body>
 
 </html>

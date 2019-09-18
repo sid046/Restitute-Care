@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#btn").click(function () {
+  $("#LogIn").click(function () {
     var email = $("#email").val();
     var pass = $("#password").val();
 
@@ -21,7 +21,10 @@ $(document).ready(function () {
       $("#pass-error").text("Please enter password");
     }
     else{
+      $("#LogIn").attr("disabled", true);
+      $(".spinner-border").show();
       signIn(email,pass);
+      $('#my-error').hide();
     }
     
   });
@@ -30,9 +33,17 @@ $(document).ready(function () {
 
 function signIn(Email, Password) {
   firebase.auth().signInWithEmailAndPassword(Email, Password).then(function () {
+    
+    var user = firebase.auth().currentUser;
+    var userID = user.uid;
+    sessionStorage.setItem("UserID", userID);    
     window.location.href = "Home.html";
   }).catch(function (error) {
     var message = error.message;
-    alert(message);
+   
+    $("#LogIn").attr("disabled", false);
+    $(".spinner-border").hide();
+    $('#my-error').addClass("alert alert-danger").text(message).show();
+    // alert(message);
   });
 }
