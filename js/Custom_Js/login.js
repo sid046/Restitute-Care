@@ -1,3 +1,9 @@
+var cooki =getCookie("userID");
+// alert(cooki);
+if(cooki != ""){
+   window.location.href = "Home.html";
+}
+
 $(document).ready(function () {
   $("#LogIn").click(function () {
     var email = $("#email").val();
@@ -36,7 +42,9 @@ function signIn(Email, Password) {
     
     var user = firebase.auth().currentUser;
     var userID = user.uid;
-    sessionStorage.setItem("UserID", userID);    
+    sessionStorage.setItem("UserID", userID);
+    setCookie("userID",userID);
+    document.cookie="userID ="+userID+"; max-age="+60*60;   
     window.location.href = "Home.html";
   }).catch(function (error) {
     var message = error.message;
@@ -46,4 +54,28 @@ function signIn(Email, Password) {
     $('#my-error').addClass("alert alert-danger").text(message).show();
     // alert(message);
   });
+}
+
+
+
+function setCookie(cname, cvalue) {
+  var d = new Date();
+  d.setTime(d.getTime() + ( 60 * 60 ));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
